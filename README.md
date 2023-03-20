@@ -1,5 +1,5 @@
 # 🔒 safe-env-sample 🔒
-This repository explains how to manage environment variables in local development safely with sample folders([folder1](/folder1), [folder2](/folder2)) with an easy step-by-step tutorial.
+This repository explains how to manage environment variables in local development in a secure way with sample folders([folder1](/folder1), [folder2](/folder2)) with an easy step-by-step tutorial.
 
 ## Requirements
 To try this repository's sample you need these two commands:
