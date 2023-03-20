@@ -111,6 +111,13 @@ We saved the 2 set of environment variables securely.
 
    Let's check how it is now with `./run.sh`. You should see the values that you stored.
 
+   ```
+   > ./run.sh
+   CLIENT_ID: 6779ef20e75817b79602
+   CLIENT_SECRET: YzNyc3BkNzZmZGNtczNiMjhtdGc6UjctX1ZOVEZQaU9
+   URL: https://example.com/folder1
+   ```
+
 1. Go `folder2`.
 
    ```
@@ -119,8 +126,22 @@ We saved the 2 set of environment variables securely.
 
    Run `direnv allow` as we did just before. And run `./run.sh`.
 
+   ```
+   > ./run.sh
+   CLIENT_ID: 8349ef30e75617c79301
+   CLIENT_SECRET: WWxCbHFBVjdpUXhFLXVTQzBfWjFqW
+   URL: https://example.com/folder2
+   ```
+
 1. Go back to `folder1` again.
 
    Run `./run.sh`.
+
+   ```
+   > ./run.sh
+   CLIENT_ID: 6779ef20e75817b79602
+   CLIENT_SECRET: YzNyc3BkNzZmZGNtczNiMjhtdGc6UjctX1ZOVEZQaU9
+   URL: https://example.com/folder1
+   ```
 
    You should see it's switching the values per directories 🎉
