@@ -67,3 +67,60 @@ Once you instaled 2 requirements, you can see how it switches environment variab
 
 ## Tutorial 💪
 
+### Store environment variables securely
+
+1. Run this command to set environment variables for `folder1`.
+
+   ```
+   > envchain --set matoruru/safe-env-sample/folder1 CLIENT_ID CLIENT_SECRET URL
+   matoruru/safe-env-sample/folder1.CLIENT_ID: 6779ef20e75817b79602
+   matoruru/safe-env-sample/folder1.CLIENT_SECRET: YzNyc3BkNzZmZGNtczNiMjhtdGc6UjctX1ZOVEZQaU9
+   matoruru/safe-env-sample/folder1.URL: https://example.com/folder1
+   ```
+
+1. Open **Keychain Access** and search "envchain-matoruru/safe-env-sample".
+
+   ![Screenshot of Keychain Access](./imgs/ss-keychain-access.png)
+
+   The 3 environment variables are stored securely 🎉
+
+1. Run this command to set environment variables for `folder2`.
+
+   ```
+   > envchain --set matoruru/safe-env-sample/folder2 CLIENT_ID CLIENT_SECRET URL
+   matoruru/safe-env-sample/folder2.CLIENT_ID: 8349ef30e75617c79301
+   matoruru/safe-env-sample/folder2.CLIENT_SECRET: WWxCbHFBVjdpUXhFLXVTQzBfWjFqW
+   matoruru/safe-env-sample/folder2.URL: https://example.com/folder2
+   ```
+
+We saved the 2 set of environment variables securely.
+
+### Switch environment variables per directories
+
+1. Go `folder1`.
+
+   ```
+   cd folder1
+   ```
+
+   If you got an error like this:
+
+   > direnv: error <Some_Path>/safe-env-sample/folder1/.envrc is blocked. Run `direnv allow` to approve its content
+
+   Just run `direnv allow` as the message suggests. And now it loaded the environment variables for `folder1`.
+
+   Let's check how it is now with `./run.sh`. You should see the values that you stored.
+
+1. Go `folder2`.
+
+   ```
+   cd ../folder2
+   ```
+
+   Run `direnv allow` as we did just before. And run `./run.sh`.
+
+1. Go back to `folder1` again.
+
+   Run `./run.sh`.
+
+   You should see it's switching the values per directories 🎉
