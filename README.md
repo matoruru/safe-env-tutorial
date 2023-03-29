@@ -1,4 +1,4 @@
-<h1 align="center">🔒 safe-env-sample 🔒</h1>
+<h1 align="center">🔒 Safe env Tutorial 🔒</h1>
 
 This repository explains how to manage environment variables in local development in a secure way with sample folders([folder1](/folder1), [folder2](/folder2)) through an easy step-by-step tutorial.
 
