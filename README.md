@@ -66,7 +66,7 @@ To try this repository's sample you need these two commands:
    ```
 
 ## What each folders describe?
-Once you instaled 2 requirements, you are ready to see how it switches environment variables depending on the current folder by moving between `folder1` and `folder2`. Let's proceed to the tutorial below:
+Once you installed 2 requirements, you are ready to see how it switches environment variables depending on the current folder by moving between `folder1` and `folder2`. Let's proceed to the tutorial below:
 
 ## Tutorial 💪
 
